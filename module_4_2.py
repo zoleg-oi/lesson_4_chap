@@ -1,7 +1,8 @@
 # Пространство имен
 def test_function():
     txt = "Я в области видимости функции test_function!!!"
-    txt1= "Я в области видимости функции test_function!!!"
+    txt1 = "Я в области видимости функции test_function!!!"
+
     def inner_function():
         nonlocal txt
         nonlocal txt1
@@ -9,8 +10,11 @@ def test_function():
         txt = "Я в области видимости функции inner_function"
         print(txt)
         print(txt1)
+
     inner_function()
     return
+
+
 test_function()
 
 try:
